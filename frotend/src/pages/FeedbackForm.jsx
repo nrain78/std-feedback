@@ -9,7 +9,7 @@ export default function FeedbackForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8000/api/feedback", form);
+    await axios.post("https://std-feedback.vercel.app/api/feedback", form);
     navigate("/thankyou");
   };
 

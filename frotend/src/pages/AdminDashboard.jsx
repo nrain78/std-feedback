@@ -16,7 +16,7 @@ export default function AdminDashboard() {
 
     const fetchFeedbacks = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/feedback", {
+        const res = await axios.get("https://std-feedback.vercel.app/api/feedback", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

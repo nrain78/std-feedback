@@ -10,7 +10,7 @@ export default function AdminLogin() {
 
   const login = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:8000/api/admin/login", form);
+    const res = await axios.post("https://std-feedback.vercel.app/api/admin/login", form);
     localStorage.setItem("token", res.data.token);
     navigate("/admin/dashboard");
   };
