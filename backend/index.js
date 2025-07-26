@@ -10,7 +10,7 @@ const adminRoutes = require("./routes/adminRoutes");
 const app = express();
 // CORS middleware
 app.use(cors({
-  origin: 'https://std-feedback-x4zu.vercel.app/',
+  origin: 'https://std-feedback-x4zu.vercel.app',
   credentials: true
 }));
 app.use(express.json());
